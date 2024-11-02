@@ -1,0 +1,266 @@
+* {      /* changing for all contents with pratical way  */  
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+em{         /* for italic coloring*/
+  color: #d4af37;
+  text-decoration: none;
+}
+
+ 
+.info-label{ /*   for user information claration style (name, surname)*/
+  font-weight: bold;
+}
+
+nav {            /* for navbar styling*/
+  margin: 5vh 10vh 2vh 10vh;
+  height: 2vh;
+  background: #b0e0e6;
+  }
+
+
+header {      /* for header styling*/
+  display: flex;
+  flex-direction: row;      /* header includes rows */
+  margin: 0vh 10vh 0vh 10vh;
+  height: 10vh;
+  border: 1px solid #71614e;
+  min-width: fit-content;
+  min-height: fit-content;
+  align-items: center;
+  background-image: linear-gradient(150deg, #1a1a1a, #4d4d4d);    /* for colorful style */
+  color: #d4af37;
+}
+
+
+
+  
+section {    /* body part styling */
+  margin: -.5px 10vh; /*  I put -.5px margin because of line beauty */
+  display: flex;
+  align-items: flex-start; 
+  border: 1px solid #71614e;
+  height: 100vh;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: #2b2b2b;
+  }
+
+  
+
+footer {        /*footer styling */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0vh 10vh 5vh 10vh;
+  height: auto;
+  border: 1px solid;    
+  min-width: fit-content;
+  min-height: fit-content;
+  background-image: linear-gradient(150deg, #1a1a1a, #4d4d4d); 
+  padding: 10px 0;
+}
+
+.footer-text {         /*for footer text styling */
+  margin-top: 10px;
+  color: #d4af37;
+  font-size: 14px;
+  text-align: center;
+}
+
+  
+
+#flex-container-left {  /* for left container of the body */
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+  align-items: center;  
+  justify-content: space-around;
+  overflow-y: auto;
+  background-image:url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzVlYXZ1NGFrcjBndGFteWs0cWhsMDU2d2Q1dWwybHozeXQ1ZmtiMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kBc2cC0JYYwpO/giphy.gif);
+  /* I put GIF for background */
+  background-position: 50%;  /* for centering the GIF*/ 
+  }
+
+  
+
+.flex-item-left {    /* styling for item of left container. */
+  display: flex;
+  border-radius: 10px;
+  background-color: #d4af37;
+  height: 25%;
+  margin: 5%;
+  min-height: 50px;    /* I clarifed min height for beauty */
+  min-width: fit-content;  
+  width: 50%;
+  color: #1a1a1a;
+
+  }
+
+  
+.currency-text {     /*I used this styling for currency texts */
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+
+.flex-item-left:active::after {   /*  When I push the button, I can see price of currency for TL*/
+  content: attr(price);  
+  margin: auto;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 5px;
+  background-color: #fafad2;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* box shadow */
+  transition: box-shadow 0.3s ease; /* transition for box shadow */
+  }
+
+
+
+  
+
+#flex-container-center {   /* styling for center container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; 
+  align-items: center;
+  width: 50%;
+  border-left: 1px solid #71614e;
+  border-right: 1px solid #71614e;
+  height: 100%;
+  overflow-y: auto;
+  }
+
+  
+
+.flex-item-center {   /* for styling item of center container */
+  border-radius: 10px;
+  background-color: #d1e7dd;
+  width: 75%;
+  min-height: fit-content;
+  margin: 5%;
+  margin-bottom: auto;
+  }
+
+  
+
+.flex-item-top-center {   /* for welcoming part styling */
+  border-bottom: 1px solid;
+  width: 100%;
+  height: 15%;
+  min-height: fit-content; /*  for fitting the content*/
+  margin-bottom: auto;
+  text-align: center;
+  background-image: linear-gradient(150deg, #333333, #dcdcdc, #333333);
+  }
+
+  
+
+  
+
+#flex-container-right {   /* styling for right container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;   /* creating spaces between contents */
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  overflow-y: auto;
+  background-image:url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzVlYXZ1NGFrcjBndGFteWs0cWhsMDU2d2Q1dWwybHozeXQ1ZmtiMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kBc2cC0JYYwpO/giphy.gif);
+  background-position: 50%;
+  }
+
+  
+
+.solid-big-box{  /* for solid big boxes */
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #f5f5dc;
+  width: 30vh;
+  margin: 5%;
+  min-height: fit-content;
+  min-width: fit-content;
+  }
+
+.boxing-column-contents{   /* for boxing column contents with dotted border */
+  display: flex;
+  flex-direction: column;  
+  margin: 5%;
+  min-height: fit-content;
+  min-width: fit-content;
+  border: 1px dotted #71614e;
+  margin: auto;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;   
+  }
+.solid-boxing-column-contents{  /* solid boxing column contents, I used this for history of operations. */
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  width: 20vh;
+  max-width: fit-content;
+  min-height: fit-content;
+  border: 1px solid #71614e;
+  margin:auto;
+  margin-bottom: 10%; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;  
+  padding: 10%;
+  font-size: 16px; 
+  font-weight: bold;
+  background-color:#d4af37;
+  }
+
+
+
+
+
+.flex-item-right {  /* general styling for right container items*/
+  border-radius: 10px;
+  background-color: #f5f5dc;
+  width: 30vh;
+  margin: 5%;
+  min-height: fit-content;
+  min-width: 25px;
+  }
+
+
+
+#bank-image {  /*styling for bank image,  this bank image used on header. */
+  margin-left: 50px;
+  margin-right: 20px;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+
+
+.flex-end{    /* I used this styling for text on the header */
+  margin-left: auto; 
+  padding-right: 1vh;
+}
+
+.circle-photos{   /* I used this styling on circle photos. */ 
+  max-width: 100px;
+  max-height: 100px;
+  margin:auto;
+  border: 1px solid #333;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.currencies-style{  /*  I used this styling on photos of currencies*/
+  max-width: 50px;
+  max-height: 50px;
+  margin: auto;
+  padding: 6px;
+}
